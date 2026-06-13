@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "tier": "producer",
+    "displayName": "Duke Strategies",
+    "tagline": "Bridging Strategy and Impact",
+    "industry": "Public Affairs / Consulting",
+    "archetype": "sage",
+    "domain": "dukestrategies.eu",
+    "protection_class": "protected",
+    "protected_assets": { "heading_font": true, "body_font": false, "primary_color": true, "accent_color": true, "motif_family": true }
+  },
+  "colors": {
+    "primary": "#222222",
+    "secondary": "#5A595C",
+    "accent": "#FF7F66",
+    "accentHover": "#E86B54",
+    "background": "#FFFFFF",
+    "backgroundAlt": "#F5F5F5",
+    "text": "#3A393C",
+    "textLight": "#807F83",
+    "success": "#5B9A6B",
+    "warning": "#D4A544",
+    "error": "#C4544A"
+  },
+  "_colorRoles": "colors must hold hex values only (website token generator emits every key as a CSS custom property). Roles: primary = structural dark (headings, table headers, overlays, dark sections); accent = coral brand signature, used sparingly (CTAs, accent lines, motif, chart highlights). Coral must never be a large background fill or full-image wash — see guidelines.md Color System.",
+  "fonts": {
+    "heading": {
+      "family": "Montserrat",
+      "fallback": "Arial, Helvetica, sans-serif",
+      "weight": "600"
+    },
+    "body": {
+      "family": "Montserrat",
+      "fallback": "Arial, Helvetica, sans-serif",
+      "weight": "normal"
+    },
+    "mono": {
+      "family": "Space Mono",
+      "fallback": "Courier New, monospace",
+      "weight": "normal"
+    }
+  },
+  "logo": {
+    "primary": "logos/logo.svg",
+    "grey": "logos/logo_grey.svg",
+    "white": "logos/logo_white.png",
+    "maxWidth": "120pt",
+    "maxHeight": "50pt",
+    "sizing": "contain"
+  },
+  "favicons": {
+    "32": "logos/favicon-32.png",
+    "192": "logos/favicon-192.png",
+    "appleTouch180": "logos/apple-touch-icon-180.png"
+  },
+  "images": {
+    "catalog": [
+      {
+        "file": "images/Erasmusbrug_zwart.jpg",
+        "description": "Erasmus Bridge, Rotterdam — dramatic black and white night view",
+        "roles": ["cover", "divider"]
+      },
+      {
+        "file": "images/Nesciobrug.jpg",
+        "description": "Nesciobrug, Amsterdam — moody pedestrian/cyclist bridge",
+        "roles": ["divider", "closing"]
+      },
+      {
+        "file": "images/Pythonbrug_Amsterdam_contrast.jpg",
+        "description": "Python Bridge, Amsterdam — high-contrast architectural shot",
+        "roles": ["divider"]
+      },
+      {
+        "file": "images/shutterstock_1510566293_RoyalWelshbrug_zwart_1920x1280px_dark.jpg",
+        "description": "Royal Welsh Bridge — dark moody bridge photography",
+        "roles": ["cover", "closing"]
+      },
+      {
+        "file": "images/erasmus-bridge-rotterdam-grayscale.jpg",
+        "description": "Erasmus Bridge at night — near-monochrome skyline, illuminated cables",
+        "roles": ["cover", "closing"]
+      },
+      {
+        "file": "images/cable-bridge-grayscale-dramatic.jpg",
+        "description": "Cable-stayed bridge — dramatic grayscale, low vantage point",
+        "roles": ["cover", "divider"]
+      },
+      {
+        "file": "images/modern-bridge-bw-dramatic.jpg",
+        "description": "Modern bridge — dramatic black and white, strong diagonals",
+        "roles": ["cover", "divider"]
+      },
+      {
+        "file": "images/bridge-fog-water-minimalist.jpg",
+        "description": "Bridge in fog over calm water — minimalist, contemplative",
+        "roles": ["divider", "closing"]
+      },
+      {
+        "file": "images/modern-cable-bridge-calm-water.jpg",
+        "description": "Modern cable bridge over calm water — light, airy geometry",
+        "roles": ["divider", "background"]
+      }
+    ],
+    "overlay": {
+      "color": "primary",
+      "opacity": 0.5
+    },
+    "logoVariantOnImage": "white",
+    "_note": "Overlay is the structural dark (#222222), not coral — coral appears on imagery only as thin accent elements (motif bar, rule lines). See images/manifest.json for per-image overlayPolicy and text-safe zones; prefer it over this global default."
+  },
+  "document": {
+    "margins": { "top": "1in", "bottom": "1in", "left": "1in", "right": "1in" },
+    "header": { "content": "{{company.name}}", "logo": true },
+    "footer": { "content": "Confidential", "pageNumbers": true },
+    "headingColor": "primary",
+    "tableHeaderColor": "primary"
+  },
+  "presentation": {
+    "slideMargin": "40pt",
+    "titleMargin": "30pt",
+    "contentMargin": "20pt",
+    "aspectRatio": "16:9"
+  },
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 30
+  },
+  "website": {
+    "archetype": "ruler",
+    "aesthetic": "luxury",
+    "layout": {
+      "density": "airy",
+      "symmetry": "symmetric",
+      "flowDirection": "linear",
+      "heroStyle": "full-bleed",
+      "gridSystem": "12col-centered",
+      "sectionSpacing": "generous",
+      "sectionDividers": "thin-line",
+      "footerStyle": "mega-footer",
+      "whitespaceStrategy": "breathing"
+    },
+    "texture": {
+      "backgroundTreatment": "solid",
+      "surfaceFinish": "glossy",
+      "borderStyle": "thin-line",
+      "shadowDepth": "medium",
+      "cornerRadius": "slight",
+      "overlayStyle": "brand-tint",
+      "patternDensity": "none"
+    },
+    "typography": {
+      "headingStyle": "tight-sans",
+      "headingScale": 1.2,
+      "bodyLineHeight": 1.7,
+      "letterSpacing": "wide",
+      "textTransform": "uppercase-headings",
+      "pullQuoteStyle": "bordered-left",
+      "listStyle": "standard"
+    },
+    "motion": {
+      "intensity": "subtle",
+      "revealStyle": "fade",
+      "scrollBehavior": "smooth",
+      "hoverBehavior": "lift",
+      "transitionSpeed": "relaxed",
+      "loadingAnimation": "skeleton",
+      "cursorStyle": "default"
+    },
+    "components": {
+      "navigation": "top-bar-expanded",
+      "cards": "shadow",
+      "buttons": "square",
+      "forms": "standard",
+      "imagePresentation": "rectangular",
+      "testimonials": "card-with-photo",
+      "ctaStyle": "full-width-band",
+      "socialProof": "logo-strip",
+      "codeBlocks": "default"
+    },
+    "colorApplication": {
+      "darkSections": true,
+      "darkSectionFrequency": 3,
+      "accentUsage": "sparring",
+      "gradientDirection": "none",
+      "colorBlockSections": true,
+      "imageOverlayBehavior": "brand-tint"
+    },
+    "pages": {
+      "home": {
+        "enabled": true,
+        "sections": [
+          { "type": "hero", "variant": "full-bleed" },
+          { "type": "social-proof", "variant": "logo-strip" },
+          { "type": "service", "variant": "icon-grid" },
+          { "type": "case-study", "variant": "featured-card" },
+          { "type": "stats", "variant": "counter-band" },
+          { "type": "testimonial", "variant": "card-with-photo" },
+          { "type": "cta", "variant": "full-width-band" }
+        ]
+      },
+      "who-we-are": { "enabled": true },
+      "what-we-do": { "enabled": true },
+      "duke-academy": { "enabled": true },
+      "insights": { "enabled": true },
+      "contact": { "enabled": true }
+    },
+    "deployment": {
+      "platform": "github-pages",
+      "domain": "dukestrategies.eu",
+      "analytics": "plausible",
+      "contactForm": "none"
+    },
+    "i18n": {
+      "enabled": true,
+      "defaultLocale": "en",
+      "locales": ["en", "nl"],
+      "labels": { "en": "English", "nl": "Nederlands" },
+      "routing": "prefix-default",
+      "fallbackLocale": "en",
+      "localeDetection": false,
+      "translationWorkflow": "llm",
+      "translateContentCollections": true
+    }
+  },
+  "formatting": {
+    "headingThreshold": 24,
+    "accentCycleColors": ["accent", "primary", "secondary"],
+    "autoContrastText": true
+  },
+  "plotly": {
+    "categoricalPalette": ["#FF7F66", "#222222", "#B04837", "#807F83", "#5B9A6B", "#D4A544"],
+    "defaultHeight": 500,
+    "titleFontSize": 18,
+    "axisFontSize": 12,
+    "legendFontSize": 11,
+    "margins": { "top": 80, "bottom": 70, "left": 60, "right": 50 },
+    "baseTemplate": "plotly_white",
+    "gridColor": "#EBEBEB",
+    "secondaryTextColor": "#807F83",
+    "bar": {
+      "markerColor": "#222222",
+      "markerLineColor": "#161616",
+      "markerLineWidth": 1
+    },
+    "line": {
+      "color": "#222222",
+      "width": 2.5,
+      "markerColor": "#FF7F66",
+      "markerSize": 7
+    },
+    "scatter": {
+      "markerColor": "#222222",
+      "markerSize": 8,
+      "markerLineWidth": 0
+    },
+    "pie": {
+      "hole": 0.4,
+      "textfontSize": 13,
+      "markerLineColor": "#FFFFFF",
+      "markerLineWidth": 2
+    },
+    "sentiment": {
+      "positiveColor": "#5B9A6B",
+      "neutralColor": "#9A999C",
+      "negativeColor": "#C4544A"
+    }
+  },
+  "excalidraw": {
+    "strokeColor": "#222222",
+    "backgroundColor": "#FFFFFF",
+    "fillColors": ["#FF7F66", "#222222", "#807F83", "#5B9A6B", "#D4A544"],
+    "textColor": "#3A393C",
+    "fontFamily": 2,
+    "fontSize": 16,
+    "strokeWidth": 2,
+    "roughness": 0,
+    "arrowColor": "#807F83",
+    "labelFontSize": 14
+  }
+}

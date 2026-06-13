@@ -1,0 +1,26 @@
+---
+/* Legacy redirect stub — preserves old /services/<slug> URLs */
+import { services } from "../../data/company";
+
+export async function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { slug: service.slug },
+  }));
+}
+
+const { slug } = Astro.props;
+const target = `/en/services/${slug}`;
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={`https://dukestrategies.com${target}`} />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={target}>{target}</a>…</p>
+  </body>
+</html>
